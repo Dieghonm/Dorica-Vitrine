@@ -1,22 +1,27 @@
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  --bg: #faf9fd;
+  --bg-alt: #f1eef8;
+  --surface: #ffffff;
+  --text: #57536b;
+  --text-h: #1d1a2b;
+  --text-soft: #8a86a0;
+  --border: #e6e2f0;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+  --accent: #5b21b6;
+  --accent-soft: #efe7fb;
+  --accent-line: #c9b8ed;
 
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
+  --highlight: #ff6b4a;
+  --highlight-soft: #ffe7e0;
+
+  --shadow: rgba(91, 33, 182, 0.1) 0 12px 28px -12px, rgba(29, 26, 43, 0.06) 0 2px 8px -2px;
+  --shadow-lift: rgba(91, 33, 182, 0.16) 0 20px 40px -16px, rgba(29, 26, 43, 0.08) 0 4px 12px -2px;
+
+  --display: 'Space Grotesk', system-ui, 'Segoe UI', sans-serif;
+  --sans: 'Inter', system-ui, 'Segoe UI', sans-serif;
+  --mono: ui-monospace, 'SFMono-Regular', Consolas, monospace;
+
+  font: 17px/155% var(--sans);
   color-scheme: light dark;
   color: var(--text);
   background: var(--bg);
@@ -32,22 +37,28 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
+    --bg: #16141f;
+    --bg-alt: #1e1b2b;
+    --surface: #1e1b2b;
+    --text: #b4afc7;
+    --text-h: #f3f1fa;
+    --text-soft: #726d8a;
+    --border: #322d45;
 
-  #social .button-icon {
-    filter: invert(1) brightness(2);
+    --accent: #a78bfa;
+    --accent-soft: rgba(167, 139, 250, 0.14);
+    --accent-line: rgba(167, 139, 250, 0.4);
+
+    --highlight: #ff8a69;
+    --highlight-soft: rgba(255, 138, 105, 0.14);
+
+    --shadow: rgba(0, 0, 0, 0.35) 0 12px 28px -12px, rgba(0, 0, 0, 0.2) 0 2px 8px -2px;
+    --shadow-lift: rgba(0, 0, 0, 0.45) 0 20px 40px -16px, rgba(0, 0, 0, 0.25) 0 4px 12px -2px;
   }
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -55,57 +66,35 @@ body {
 }
 
 #root {
-  width: 1126px;
-  max-width: 100%;
+  max-width: 1180px;
   margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
   min-height: 100svh;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
 }
 
 h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
+h2,
+h3 {
+  font-family: var(--display);
+  font-weight: 600;
   color: var(--text-h);
+  margin: 0;
 }
 
-h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
-}
-h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
-}
 p {
   margin: 0;
 }
 
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
+a {
+  color: inherit;
 }
 
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
 }

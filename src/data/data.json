@@ -4,8 +4,16 @@
     "logo": "https://res.cloudinary.com/dfkebb4ds/image/upload/v1773086218/logo-lider_sjcaxz.png",
     "cor": "#D4572A",
     "produtos": [
-      { "imagem": "https://...", "nome": "bonecos colecionaveis", "descricao": "" },
-      { "imagem": "https://...", "nome": "bola de plastico", "descricao": "" }
+      { 
+        "imagem": "https://images.tcdn.com.br/img/img_prod/727032/fandom_box_senhor_dos_anis_frodo_2_20260218111944_5691039b3611.jpg", 
+        "nome": "SR DOS ANEIS - FRODO", 
+        "descricao": "..." 
+      },
+      { 
+        "imagem": "https://images.tcdn.com.br/img/img_prod/727032/fandom_box_senhor_dos_anis_lgolas_2_20260218112337_b458bf5331c3.jpg", 
+        "nome": "SR DOS ANEIS - LEGOLAS", 
+        "descricao": "..." 
+      }
     ]
   },
   {
@@ -13,8 +21,16 @@
     "logo": "https://biemme.com.br/wp-content/uploads/2022/05/logo-biemme-vertical.png",
     "cor": "#D4572A",
     "produtos": [
-      { "imagem": "https://...", "nome": "carro", "descricao": "..." },
-      { "imagem": "https://...", "nome": "moto", "descricao": "..." }
+      { 
+        "imagem": "https://biemme.com.br/wp-content/uploads/2022/06/f22-4.png", 
+        "nome": "CAR ONE AD BRANCO", 
+        "descricao": "" 
+      },
+      { 
+        "imagem": "https://biemme.com.br/wp-content/uploads/2022/06/DSC_1400-e1742930987545.jpg", 
+        "nome": "SPRINT TURBO PRETA", 
+        "descricao": "" 
+      }
     ]
   }
 ]

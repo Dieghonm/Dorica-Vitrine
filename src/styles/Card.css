@@ -1,57 +1,90 @@
 .card {
+  background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 20px;
+  border-radius: 14px;
+  padding: 18px;
   text-align: left;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
   transition: box-shadow 0.2s, transform 0.2s;
 }
+
 .card:hover {
-  box-shadow: var(--shadow);
-  transform: translateY(-2px);
+  box-shadow: var(--shadow-lift);
+  transform: translateY(-3px);
 }
+
 .card-header {
   display: flex;
   align-items: center;
-  gap: 12px;
-  border-bottom: 3px solid var(--cor-fabrica, var(--accent));
+  gap: 10px;
   padding-bottom: 12px;
+  border-bottom: 3px solid var(--cor-fabrica, var(--accent));
 }
+
 .card-logo {
-  height: 40px;
+  height: 32px;
   width: auto;
+  max-width: 96px;
   object-fit: contain;
 }
+
 .card-header h3 {
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--text-h);
 }
+
 .card-produtos {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
 }
+
 .produto {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
-.produto img {
+
+.produto-imagem {
+  position: relative;
+}
+
+.produto-imagem img {
+  display: block;
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
-  border-radius: 8px;
-  background: var(--code-bg);
+  border-radius: 10px;
+  background: var(--bg-alt);
 }
+
+.produto-badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  padding: 3px 7px;
+  border-radius: 5px;
+  background: var(--highlight);
+  color: white;
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 .produto-info strong {
   display: block;
-  font-size: 14px;
+  font-size: 13.5px;
   color: var(--text-h);
+  line-height: 130%;
 }
+
 .produto-info span {
-  font-size: 13px;
-  color: var(--text);
+  font-size: 12.5px;
+  color: var(--text-soft);
+  line-height: 130%;
 }

@@ -1,0 +1,15 @@
+.site-footer {
+  margin-top: 40px;
+  padding: 20px 32px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+
+  @media (max-width: 720px) {
+    padding: 20px;
+  }
+}
+
+.site-footer p {
+  font-size: 13px;
+  color: var(--text-soft);
+}
