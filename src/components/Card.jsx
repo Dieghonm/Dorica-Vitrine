@@ -1,7 +1,10 @@
-import '../styles/card.css'
+import DoricaRaw from '../data/Dorica.json'
+import '../styles/Card.css'
 
 function Card({ data }) {
   const { nome, logo, cor, produtos = [] } = data
+  const dorica = DoricaRaw[0]
+  const mensagem = encodeURIComponent(dorica.catalogoMensagem + nome)
 
   return (
     <article className="card" style={{ '--cor-fabrica': cor }}>
@@ -15,7 +18,6 @@ function Card({ data }) {
           <div className="produto" key={produto.nome}>
             <div className="produto-imagem">
               <img src={produto.imagem} alt={produto.nome} />
-              <span className="produto-badge">Mais vendido</span>
             </div>
             <div className="produto-info">
               <strong>{produto.nome}</strong>
@@ -23,17 +25,16 @@ function Card({ data }) {
             </div>
           </div>
         ))}
-
       </div>
 
-        <a
-          className="hero-cta"
-          href={`https://wa.me/${DoricaRaw[0].WHATSAPP}?text=${DoricaRaw[0].catalogoMensagem + nome}`}
-          target="_blank"
-          rel="noreferrer"
-        >
-          Solicitar catálogo completo
-        </a>
+      <a
+        className="card-cta"
+        href={`https://wa.me/${dorica.whatsapp}?text=${mensagem}`}
+        target="_blank"
+        rel="noreferrer"
+      >
+        Solicitar catálogo completo
+      </a>
     </article>
   )
 }

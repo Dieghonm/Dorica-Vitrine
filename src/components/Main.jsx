@@ -1,6 +1,6 @@
 import fabricasRaw from '../data/data.json'
-import Card from './card.jsx'
-import '../styles/main.css'
+import Card from './Card'
+import '../styles/Main.css'
 
 function Main() {
   return (

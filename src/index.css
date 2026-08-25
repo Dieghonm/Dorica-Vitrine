@@ -1,27 +1,29 @@
 :root {
-  --bg: #faf9fd;
-  --bg-alt: #f1eef8;
+  --bg: #f7faf9;
+  --bg-alt: #eaf3f1;
   --surface: #ffffff;
-  --text: #57536b;
-  --text-h: #1d1a2b;
-  --text-soft: #8a86a0;
-  --border: #e6e2f0;
+  --text: #445055;
+  --text-h: #12201e;
+  --text-soft: #6b7b7c;
+  --border: #dce7e4;
 
-  --accent: #5b21b6;
-  --accent-soft: #efe7fb;
-  --accent-line: #c9b8ed;
+  --accent: #0d6e63;
+  --accent-soft: #dff3ef;
+  --accent-line: #9fd9ce;
 
-  --highlight: #ff6b4a;
-  --highlight-soft: #ffe7e0;
+  --highlight: #f2994a;
+  --highlight-soft: #fce9d6;
 
-  --shadow: rgba(91, 33, 182, 0.1) 0 12px 28px -12px, rgba(29, 26, 43, 0.06) 0 2px 8px -2px;
-  --shadow-lift: rgba(91, 33, 182, 0.16) 0 20px 40px -16px, rgba(29, 26, 43, 0.08) 0 4px 12px -2px;
+  --shadow: rgba(13, 110, 99, 0.12) 0 12px 28px -14px, rgba(18, 32, 30, 0.08) 0 2px 8px -2px;
+  --shadow-lift: rgba(13, 110, 99, 0.18) 0 18px 36px -16px, rgba(18, 32, 30, 0.1) 0 4px 12px -2px;
 
-  --display: 'Space Grotesk', system-ui, 'Segoe UI', sans-serif;
-  --sans: 'Inter', system-ui, 'Segoe UI', sans-serif;
+  --font: 'Manrope', system-ui, 'Segoe UI', sans-serif;
   --mono: ui-monospace, 'SFMono-Regular', Consolas, monospace;
 
-  font: 17px/155% var(--sans);
+  --cta-bar-height: 68px;
+
+  /* base mobile: 16px evita zoom automático em inputs no iOS */
+  font: 16px/155% var(--font);
   color-scheme: light dark;
   color: var(--text);
   background: var(--bg);
@@ -29,31 +31,33 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
 
-  @media (max-width: 1024px) {
-    font-size: 16px;
+@media (min-width: 1024px) {
+  :root {
+    font-size: 17px;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #16141f;
-    --bg-alt: #1e1b2b;
-    --surface: #1e1b2b;
-    --text: #b4afc7;
-    --text-h: #f3f1fa;
-    --text-soft: #726d8a;
-    --border: #322d45;
+    --bg: #0f1715;
+    --bg-alt: #16211e;
+    --surface: #16211e;
+    --text: #a9b8b5;
+    --text-h: #eef5f3;
+    --text-soft: #728482;
+    --border: #263531;
 
-    --accent: #a78bfa;
-    --accent-soft: rgba(167, 139, 250, 0.14);
-    --accent-line: rgba(167, 139, 250, 0.4);
+    --accent: #4fd6c3;
+    --accent-soft: rgba(79, 214, 195, 0.14);
+    --accent-line: rgba(79, 214, 195, 0.4);
 
-    --highlight: #ff8a69;
-    --highlight-soft: rgba(255, 138, 105, 0.14);
+    --highlight: #ffab6b;
+    --highlight-soft: rgba(255, 171, 107, 0.14);
 
-    --shadow: rgba(0, 0, 0, 0.35) 0 12px 28px -12px, rgba(0, 0, 0, 0.2) 0 2px 8px -2px;
-    --shadow-lift: rgba(0, 0, 0, 0.45) 0 20px 40px -16px, rgba(0, 0, 0, 0.25) 0 4px 12px -2px;
+    --shadow: rgba(0, 0, 0, 0.4) 0 12px 28px -14px, rgba(0, 0, 0, 0.25) 0 2px 8px -2px;
+    --shadow-lift: rgba(0, 0, 0, 0.5) 0 18px 36px -16px, rgba(0, 0, 0, 0.3) 0 4px 12px -2px;
   }
 }
 
@@ -71,13 +75,21 @@ body {
   min-height: 100svh;
   display: flex;
   flex-direction: column;
+  /* espaço pra barra fixa de contato no mobile não cobrir o rodapé */
+  padding-bottom: var(--cta-bar-height);
+}
+
+@media (min-width: 768px) {
+  #root {
+    padding-bottom: 0;
+  }
 }
 
 h1,
 h2,
 h3 {
-  font-family: var(--display);
-  font-weight: 600;
+  font-family: var(--font);
+  font-weight: 800;
   color: var(--text-h);
   margin: 0;
 }
@@ -90,11 +102,16 @@ a {
   color: inherit;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 .eyebrow {
   font-family: var(--mono);
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.14em;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--accent);
 }

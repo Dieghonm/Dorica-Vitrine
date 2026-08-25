@@ -1,0 +1,16 @@
+main {
+  flex: 1;
+  padding: 0 16px 40px;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding: 0 32px 56px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    padding: 0 40px 64px;
+  }
+}

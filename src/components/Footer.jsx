@@ -1,14 +1,23 @@
-import DoricaRaw from '../data/dorica.json'
-import '../styles/footer.css'
+import DoricaRaw from '../data/Dorica.json'
+import '../styles/Footer.css'
 
 function Footer() {
+  const dorica = DoricaRaw[0]
+
   return (
     <footer className="site-footer">
-      <p>{DoricaRaw[0].nome2} — catálogo completo de cada fabricante sob consulta.</p>
-      <p>{DoricaRaw[0].CNPJ}</p>
-      <p>{DoricaRaw[0].endereço}</p>
-      <p>{DoricaRaw[0].cep}</p>
-      <p>{DoricaRaw[0].WHATSAPP}</p>
+      <p className="footer-empresa">{dorica.nome2}</p>
+      <p>{dorica.CNPJ}</p>
+      <p>{dorica.endereço}</p>
+      <p>{dorica.cep}</p>
+      <a
+        className="footer-whatsapp"
+        href={`https://wa.me/${dorica.whatsapp}`}
+        target="_blank"
+        rel="noreferrer"
+      >
+        WhatsApp
+      </a>
     </footer>
   )
 }
