@@ -1,0 +1,14 @@
+/* adicionar no App.css ou Header.css */
+.contato-btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+.contato-btn:hover {
+  opacity: 0.9;
+}
