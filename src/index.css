@@ -1,6 +1,6 @@
 
 :root {
-  --paper: #f4efe2;
+  /* --paper: #f4efe2;
   --paper-deep: #ece3cc;
   --card: #fffdf7;
 
@@ -23,7 +23,30 @@
   --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace;
 
   --shadow: rgba(30, 42, 58, 0.1) 0 12px 28px -14px, rgba(30, 42, 58, 0.08) 0 2px 8px -2px;
-  --shadow-lift: rgba(30, 42, 58, 0.16) 0 18px 36px -16px, rgba(30, 42, 58, 0.1) 0 4px 12px -2px;
+  --shadow-lift: rgba(30, 42, 58, 0.16) 0 18px 36px -16px, rgba(30, 42, 58, 0.1) 0 4px 12px -2px; */
+
+  --paper: #0f1715;
+
+  --paper-deep: #16211e;
+  --card: #16211e;
+
+  --ink: #a9b8b5;
+  --ink-soft: #eef5f3;
+  --ink-faint: #728482;
+
+  --line: #263531;
+  --brass: #4fd6c3;
+  --brass-soft: #f1e6c8;
+
+  --stamp: #b23b2e;
+  --stamp-soft: #f6dad4;
+
+  --whatsapp: #25d366;
+  --whatsapp-dark: #1da851;
+
+  --font-display: 'Roboto Slab', ui-serif, Georgia, serif;
+  --font-body: 'Inter', system-ui, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace;
 
   font: 16px/155% var(--font-body);
   color-scheme: light;

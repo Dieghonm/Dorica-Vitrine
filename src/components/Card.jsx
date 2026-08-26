@@ -10,18 +10,17 @@ function Card({ data, index }) {
 
   return (
     <article
-      className={`card${reverse ? ' card--reverse' : ''}`}
+      // className={`card${reverse ? ' card--reverse' : ''}`}
+      className='card'
       style={{ '--cor-fabrica': cor }}
     >
-      <span className="card-tab" style={{ 'background': cor }}>Nº {String(index + 1).padStart(2, '0')}</span>
-
       <header className="card-header">
         <img className="card-logo" src={logo} alt={`Logo ${nome}`} />
         <h3>{nome}</h3>
       </header>
 
       <div className="card-produtos">
-        {produtos.slice(0, 2).map((produto) => (
+        {produtos.map((produto) => (
           <div className="produto" key={produto.nome}>
             <div className="produto-imagem">
               <img src={produto.imagem} alt={produto.nome} loading="lazy" />

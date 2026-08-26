@@ -12,6 +12,7 @@ function Main() {
 
       <div className="catalogo-list">
         {fabricasRaw.map((fabrica, index) => (
+          
           <Card key={fabrica.nome} data={fabrica} index={index} />
         ))}
       </div>
