@@ -1,12 +1,13 @@
 .card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 16px;
-  text-align: left;
+  position: relative;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 18px 16px 16px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
+  box-shadow: var(--shadow);
   transition: box-shadow 0.2s, transform 0.2s;
 }
 
@@ -15,12 +16,36 @@
   transform: translateY(-2px);
 }
 
+.card-tab {
+  position: absolute;
+  top: -10px;
+  right: 16px;
+  padding: 3px 8px;
+  /* background: var(--brass); */
+  color: var(--paper);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+}
+
+.card--reverse .card-tab {
+  right: auto;
+  left: 16px;
+}
+
 .card-header {
   display: flex;
   align-items: center;
   gap: 10px;
   padding-bottom: 12px;
-  border-bottom: 3px solid var(--cor-fabrica, var(--accent));
+  border-bottom: 2px solid var(--cor-fabrica, var(--brass));
+}
+
+.card--reverse .card-header {
+  flex-direction: row-reverse;
+  text-align: right;
 }
 
 .card-logo {
@@ -33,7 +58,7 @@
 .card-header h3 {
   margin: 0;
   font-size: 15px;
-  color: var(--text-h);
+  color: var(--ink);
 }
 
 .card-produtos {
@@ -56,21 +81,22 @@
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
-  border-radius: 10px;
-  background: var(--bg-alt);
+  border-radius: 8px;
+  background: var(--paper-deep);
 }
 
 .produto-badge {
   position: absolute;
   top: 6px;
   left: 6px;
+  z-index: 1;
   padding: 3px 7px;
   border-radius: 5px;
-  background: var(--highlight);
+  background: var(--stamp);
   color: white;
-  font-family: var(--mono);
+  font-family: var(--font-mono);
   font-size: 9px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -78,43 +104,43 @@
 .produto-info strong {
   display: block;
   font-size: 12.5px;
-  color: var(--text-h);
+  color: var(--ink);
   line-height: 130%;
 }
 
 .produto-info span {
   font-size: 11.5px;
-  color: var(--text-soft);
+  color: var(--ink-soft);
   line-height: 130%;
 }
 
 .card-cta {
-  /* alvo de toque confortável (min. 44px de altura recomendado) */
   min-height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 6px;
   text-align: center;
   padding: 10px;
   border-radius: 8px;
-  background: var(--accent-soft);
-  color: var(--accent);
+  background: transparent;
+  color: var(--whatsapp-dark);
   font-weight: 700;
   font-size: 13.5px;
   text-decoration: none;
-  border: 1px solid var(--accent-line);
+  border: 1.5px solid var(--whatsapp);
   transition: background 0.2s, color 0.2s;
 }
 
 .card-cta:hover {
-  background: var(--accent);
+  background: var(--whatsapp);
   color: white;
 }
 
 @media (min-width: 768px) {
   .card {
-    padding: 18px;
-    gap: 14px;
+    padding: 22px 20px 18px;
+    gap: 16px;
   }
 
   .card-logo {
@@ -126,15 +152,51 @@
     font-size: 16px;
   }
 
-  .card-produtos {
-    gap: 12px;
-  }
-
   .produto-info strong {
     font-size: 13.5px;
   }
 
   .produto-info span {
     font-size: 12.5px;
+  }
+}
+
+/* tela grande: imagem, descrição, imagem, descrição — espelhado nos cards reversos */
+@media (min-width: 1024px) {
+  .card-produtos {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .card--reverse .card-produtos {
+    flex-direction: row-reverse;
+  }
+
+  .produto {
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .card--reverse .produto {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+
+  .produto-imagem {
+    flex: 0 0 110px;
+    width: 110px;
+  }
+
+  .card-cta {
+    align-self: flex-start;
+    padding: 10px 20px;
+  }
+
+  .card--reverse .card-cta {
+    align-self: flex-end;
   }
 }

@@ -1,23 +1,24 @@
 import DoricaRaw from '../data/Dorica.json'
+import WhatsAppIcon from './WhatsAppIcon'
 import '../styles/Footer.css'
 
 function Footer() {
   const dorica = DoricaRaw[0]
+  const ano = new Date().getFullYear()
 
   return (
     <footer className="site-footer">
-      <p className="footer-empresa">{dorica.nome2}</p>
-      <p>{dorica.CNPJ}</p>
-      <p>{dorica.endereço}</p>
-      <p>{dorica.cep}</p>
       <a
         className="footer-whatsapp"
         href={`https://wa.me/${dorica.whatsapp}`}
         target="_blank"
         rel="noreferrer"
       >
-        WhatsApp
+        <WhatsAppIcon size={15} />
+        Falar no WhatsApp
       </a>
+
+      <p className="footer-legal">© {ano} {dorica.nome2}. Todos os direitos reservados.</p>
     </footer>
   )
 }

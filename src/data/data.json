@@ -4,15 +4,15 @@
     "logo": "https://res.cloudinary.com/dfkebb4ds/image/upload/v1773086218/logo-lider_sjcaxz.png",
     "cor": "#D4572A",
     "produtos": [
-      { 
-        "imagem": "https://images.tcdn.com.br/img/img_prod/727032/fandom_box_senhor_dos_anis_frodo_2_20260218111944_5691039b3611.jpg", 
-        "nome": "SR DOS ANEIS - FRODO", 
-        "descricao": "..." 
+      {
+        "imagem": "https://images.tcdn.com.br/img/img_prod/727032/fandom_box_senhor_dos_anis_frodo_2_20260218111944_5691039b3611.jpg",
+        "nome": "SR DOS ANEIS - FRODO",
+        "descricao": "Boneco colecionável."
       },
-      { 
-        "imagem": "https://images.tcdn.com.br/img/img_prod/727032/fandom_box_senhor_dos_anis_lgolas_2_20260218112337_b458bf5331c3.jpg", 
-        "nome": "SR DOS ANEIS - LEGOLAS", 
-        "descricao": "..." 
+      {
+        "imagem": "https://images.tcdn.com.br/img/img_prod/727032/fandom_box_senhor_dos_anis_lgolas_2_20260218112337_b458bf5331c3.jpg",
+        "nome": "SR DOS ANEIS - LEGOLAS",
+        "descricao": "Boneco colecionável."
       }
     ]
   },
@@ -21,15 +21,49 @@
     "logo": "https://biemme.com.br/wp-content/uploads/2022/05/logo-biemme-vertical.png",
     "cor": "#2A6DD4",
     "produtos": [
-      { 
-        "imagem": "https://biemme.com.br/wp-content/uploads/2022/06/f22-4.png", 
-        "nome": "CAR ONE AD BRANCO", 
-        "descricao": "" 
+      {
+        "imagem": "https://biemme.com.br/wp-content/uploads/2022/06/f22-4.png",
+        "nome": "CAR ONE AD BRANCO",
+        "descricao": "Miniatura em escala, rodas de liga, portas funcionais."
       },
-      { 
-        "imagem": "https://biemme.com.br/wp-content/uploads/2022/06/DSC_1400-e1742930987545.jpg", 
-        "nome": "SPRINT TURBO PRETA", 
-        "descricao": "" 
+      {
+        "imagem": "https://biemme.com.br/wp-content/uploads/2022/06/DSC_1400-e1742930987545.jpg",
+        "nome": "SPRINT TURBO PRETA",
+        "descricao": "Miniatura esportiva, acabamento fosco, giro livre."
+      }
+    ]
+  },
+  {
+    "nome": "Estrela Kids",
+    "logo": "https://placehold.co/160x60/7A3FB0/ffffff?font=roboto&text=Estrela+Kids",
+    "cor": "#7A3FB0",
+    "produtos": [
+      {
+        "imagem": "https://placehold.co/400x400/EDE3F7/7A3FB0?font=roboto&text=Pelucia+Urso",
+        "nome": "PELÚCIA URSO POLAR",
+        "descricao": "35cm, antialérgica, costura reforçada."
+      },
+      {
+        "imagem": "https://placehold.co/400x400/EDE3F7/7A3FB0?font=roboto&text=Kit+Cozinha",
+        "nome": "KIT COZINHA INFANTIL",
+        "descricao": "12 peças, plástico atóxico, cores sortidas."
+      }
+    ]
+  },
+  {
+    "nome": "TrackMasters",
+    "logo": "https://placehold.co/160x60/1F8A70/ffffff?font=roboto&text=TrackMasters",
+    "cor": "#1F8A70",
+    "produtos": [
+      {
+        "imagem": "https://placehold.co/400x400/DCF0EA/1F8A70?font=roboto&text=Pista+Loop",
+        "nome": "PISTA LOOP RADICAL",
+        "descricao": "2,4m de pista, 1 carrinho incluso, pilhas não inclusas."
+      },
+      {
+        "imagem": "https://placehold.co/400x400/DCF0EA/1F8A70?font=roboto&text=Carrinho+Fricção",
+        "nome": "CARRINHO FRICÇÃO GT",
+        "descricao": "Escala 1:24, sistema de fricção, 4 cores sortidas."
       }
     ]
   }

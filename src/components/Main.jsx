@@ -10,9 +10,9 @@ function Main() {
         <span className="section-count">{fabricasRaw.length} vitrines</span>
       </div>
 
-      <div className="catalogo-grid">
-        {fabricasRaw.map((fabrica) => (
-          <Card key={fabrica.nome} data={fabrica} />
+      <div className="catalogo-list">
+        {fabricasRaw.map((fabrica, index) => (
+          <Card key={fabrica.nome} data={fabrica} index={index} />
         ))}
       </div>
     </main>
