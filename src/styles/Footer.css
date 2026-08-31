@@ -1,5 +1,5 @@
 .site-footer {
-  margin-top: 32px;
+  margin-top: 2px;
   padding: 24px 16px 28px;
   background: var(--paper-deep);
   border-top: 1px solid var(--line);
@@ -43,6 +43,30 @@
 .footer-legal {
   font-family: var(--font-mono);
   font-size: 10.5px;
+  color: var(--ink-faint);
+}
+
+.footer-dev {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+}
+
+.footer-dev a {
+  color: var(--ink-faint);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.footer-dev a:hover {
+  color: var(--ink-soft);
+  border-color: var(--ink-faint);
+}
+
+.footer-dev-sep {
   color: var(--ink-faint);
 }
 

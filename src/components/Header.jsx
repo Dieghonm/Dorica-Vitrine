@@ -13,6 +13,15 @@ function Header() {
       <div className="brand-bar">
         <img className="brand-logo" src={dorica.logo} alt={dorica.nome} />
         <span className="brand-name">{dorica.nome}</span>
+        <a
+          className="brand-whatsapp-btn"
+          href={`https://wa.me/${dorica.whatsapp}?text=${mensagem}`}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <WhatsAppIcon size={16} />
+          WhatsApp
+        </a>
       </div>
 
       <div className="hero">
@@ -25,17 +34,6 @@ function Header() {
             O mais vendido de cada fábrica, numa folheada só.
           </p>
           
-
-
-           <a
-             className="brand-whatsapp-btn"
-             href={`https://wa.me/${dorica.whatsapp}?text=${mensagem}`}
-             target="_blank"
-             rel="noreferrer"
-           >
-             <WhatsAppIcon size={16} />
-             WhatsApp
-           </a>
         </div>
       </div>
     </header>

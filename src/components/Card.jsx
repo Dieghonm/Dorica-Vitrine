@@ -27,7 +27,7 @@ function Card({ data, index }) {
             </div>
             <div className="produto-info">
               <strong>{produto.nome}</strong>
-              {produto.descricao && <span>{produto.descricao}</span>}
+              {produto.descricao && <p>{produto.descricao}</p>}
             </div>
           </div>
         ))}

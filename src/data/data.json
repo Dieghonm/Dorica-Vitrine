@@ -1,6 +1,6 @@
 [
   {
-    "nome": "Líder",
+    "nome": "Lider",
     "logo": "https://res.cloudinary.com/dfkebb4ds/image/upload/v1773086218/logo-lider_sjcaxz.png",
     "cor": "#D4572A",
     "produtos": [
@@ -113,7 +113,7 @@
     "cor": "#1F8A70",
     "produtos": [
       {
-        "imagem": "https://static.wixstatic.com/media/187aeb_fd0bee9fbc1b49498b6cf758883da314~mv2.png/v1/fill/w_996,h_996,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/187aeb_fd0bee9fbc1b49498b6cf758883da314~mv2.png",
+        "imagem": "https://res.cloudinary.com/dag4ql4tf/image/upload/v1788184583/bonecas_i2pego.png",
         "nome": "Boneca Anaju",
         "descricao": "A Boneca Anaju é uma bonequinha moderna e cheia de personalidade."
       },

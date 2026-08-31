@@ -25,18 +25,19 @@
   --shadow: rgba(30, 42, 58, 0.1) 0 12px 28px -14px, rgba(30, 42, 58, 0.08) 0 2px 8px -2px;
   --shadow-lift: rgba(30, 42, 58, 0.16) 0 18px 36px -16px, rgba(30, 42, 58, 0.1) 0 4px 12px -2px; */
 
-  --paper: #0f1715;
+    /* --paper: #c6e0cf; */
 
-  --paper-deep: #16211e;
-  --card: #16211e;
+  --paper: #a3c3ae;
+  --paper-deep: #b3d3bd;
+  --card: #e0efe5;
 
-  --ink: #a9b8b5;
-  --ink-soft: #eef5f3;
-  --ink-faint: #728482;
+  --ink: #16261c;
+  --ink-soft: #3c5245;
+  --ink-faint: #6d8577;
 
-  --line: #263531;
-  --brass: #4fd6c3;
-  --brass-soft: #f1e6c8;
+  --line: #a3c4ad;
+  --brass: #0d6e63;
+  --brass-soft: #dcefe6;
 
   --stamp: #b23b2e;
   --stamp-soft: #f6dad4;
@@ -45,7 +46,7 @@
   --whatsapp-dark: #1da851;
 
   --font-display: 'Roboto Slab', ui-serif, Georgia, serif;
-  --font-body: 'Inter', system-ui, 'Segoe UI', sans-serif;
+  --font-body: system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace;
 
   font: 16px/155% var(--font-body);

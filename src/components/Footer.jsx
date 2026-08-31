@@ -19,6 +19,26 @@ function Footer() {
       </a>
 
       <p className="footer-legal">© {ano} {dorica.nome2}. Todos os direitos reservados.</p>
+
+      <div className="footer-dev">
+
+        <span className="footer-dev-sep">·</span>
+        <a
+          href="https://github.com/Dieghonm"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Desenvolvido por Dieghonm
+        </a> 
+        -
+        <a
+          href="https://github.com/Dieghonm/Dorica-Vitrine"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Manutenção
+        </a>
+      </div>
     </footer>
   )
 }
