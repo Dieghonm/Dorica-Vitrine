@@ -32,7 +32,7 @@ function Footer() {
         </a> 
         -
         <a
-          href="https://github.com/Dieghonm/Dorica-Vitrine"
+          href="https://github.com/doricarepresentacoes/Dorica-Vitrine"
           target="_blank"
           rel="noreferrer"
         >
