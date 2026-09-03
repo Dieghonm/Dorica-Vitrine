@@ -9,7 +9,8 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "deploy2": "gh-pages -d dist --repo https://github.com/doricarepresentacoes/Dorica-Vitrine.git"
   },
   "dependencies": {
     "react": "^19.2.8",
