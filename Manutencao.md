@@ -30,9 +30,9 @@ pelo site do GitHub.
 ## Onde fica cada arquivo
 
 | O que você quer editar | Arquivo | Link direto |
-|---|---|---|
-| Fabricantes e produtos | `data.json` | https://github.com/Dieghonm/Dorica-Vitrine/blob/main/src/data/data.json |
-| Dados da Dórica (WhatsApp, texto de apresentação, etc.) | `Dorica.json` | https://github.com/Dieghonm/Dorica-Vitrine/blob/main/src/data/Dorica.json |
+|---|---|---|https://github.com/doricarepresentacoes/Dorica-Vitrine/tree/main/src/data
+| Fabricantes e produtos | `data.json` | https://github.com/doricarepresentacoes/Dorica-Vitrine/tree/main/src/data/data.json |
+| Dados da Dórica (WhatsApp, texto de apresentação, etc.) | `Dorica.json` | https://github.com/doricarepresentacoes/Dorica-Vitrine/tree/main/src/data/Dorica.json |
 
 **Caminho manual (caso o link não funcione):**
 GitHub → seus repositórios → **Dorica-Vitrine** → pasta `src` → pasta `data` →
