@@ -30,7 +30,7 @@ pelo site do GitHub.
 ## Onde fica cada arquivo
 
 | O que você quer editar | Arquivo | Link direto |
-|---|---|---|https://github.com/doricarepresentacoes/Dorica-Vitrine/tree/main/src/data
+|---|---|---|
 | Fabricantes e produtos | `data.json` | https://github.com/doricarepresentacoes/Dorica-Vitrine/tree/main/src/data/data.json |
 | Dados da Dórica (WhatsApp, texto de apresentação, etc.) | `Dorica.json` | https://github.com/doricarepresentacoes/Dorica-Vitrine/tree/main/src/data/Dorica.json |
 
