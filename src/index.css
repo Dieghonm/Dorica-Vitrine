@@ -1,39 +1,12 @@
 
 :root {
-  /* --paper: #f4efe2;
-  --paper-deep: #ece3cc;
-  --card: #fffdf7;
-
-  --ink: #1e2a3a;
-  --ink-soft: #5b6472;
-  --ink-faint: #8a8f7d;
-
-  --line: #d9cda9;
-  --brass: #9c7a34;
-  --brass-soft: #f1e6c8;
-
-  --stamp: #b23b2e;
-  --stamp-soft: #f6dad4;
-
-  --whatsapp: #25d366;
-  --whatsapp-dark: #1da851;
-
-  --font-display: 'Roboto Slab', ui-serif, Georgia, serif;
-  --font-body: 'Inter', system-ui, 'Segoe UI', sans-serif;
-  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace;
-
-  --shadow: rgba(30, 42, 58, 0.1) 0 12px 28px -14px, rgba(30, 42, 58, 0.08) 0 2px 8px -2px;
-  --shadow-lift: rgba(30, 42, 58, 0.16) 0 18px 36px -16px, rgba(30, 42, 58, 0.1) 0 4px 12px -2px; */
-
-    /* --paper: #c6e0cf; */
-
   --paper: #a3c3ae;
   --paper-deep: #b3d3bd;
   --card: #e0efe5;
 
-  --ink: #16261c;
-  --ink-soft: #3c5245;
-  --ink-faint: #6d8577;
+  --ink: #40342b;
+  --ink-soft: #6b5b4e;
+  --ink-faint: #806f61;
 
   --line: #a3c4ad;
   --brass: #0d6e63;

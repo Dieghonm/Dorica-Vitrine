@@ -21,17 +21,17 @@
   left: 16px;
 }
 
+.card--reverse .card-header {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
 .card-header {
   display: flex;
   align-items: center;
   gap: 10px;
   padding-bottom: 12px;
   border-bottom: 2px solid var(--cor-fabrica, var(--brass));
-}
-
-.card--reverse .card-header {
-  flex-direction: row-reverse;
-  text-align: right;
 }
 
 .card-logo {
@@ -44,20 +44,23 @@
 
 .card-header h3 {
   margin: 0;
-  font-size: 25px;
+  font-size: 38px;
   color: var(--ink);
+  flex: 1;
+  text-align: center;
+  margin-right: 50px;
 }
 
 .card-produtos {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 16px;
 }
 
 .produto {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 12px;
 }
 
 .produto-imagem {
@@ -68,7 +71,7 @@
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 20px;
   background: var(--paper-deep);
 }
 
@@ -90,16 +93,17 @@
 
 .produto-info strong {
   display: block;
-  font-size: 12.5px;
+  font-size: 16px;
   color: var(--ink);
   line-height: 130%;
 }
 
 .produto-info p {
-  font-size: 11.5px;
+  font-size: 14px;
   color: var(--ink-soft);
   line-height: 100%;
   padding: 10px 0px;
+  
 }
 
 .card-cta {
@@ -114,7 +118,7 @@
   background: transparent;
   color: var(--whatsapp-dark);
   font-weight: 700;
-  font-size: 13.5px;
+  font-size: 18px;
   text-decoration: none;
   border: 1.5px solid var(--whatsapp);
   transition: background 0.2s, color 0.2s;
@@ -137,11 +141,11 @@
   }
 
   .card-header h3 {
-    font-size: 16px;
+    font-size: 50px;
   }
 
   .produto-info strong {
-    font-size: 13.5px;
+    font-size: 18px;
   }
 
   .produto-info span {
@@ -152,9 +156,9 @@
 /* tela grande: imagem, descrição, imagem, descrição — espelhado nos cards reversos */
 @media (min-width: 1024px) {
 .card-produtos {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* align-items: stretch; */
     gap: 20px;
   }
 
@@ -175,7 +179,7 @@
   }
 
   .produto-imagem {
-    flex: 0 0 110px;
+    flex: 0 0 160px;
     width: 110px;
   }
 
@@ -186,5 +190,9 @@
 
   .card--reverse .card-cta {
     align-self: flex-end;
+  }
+
+  .produto-info p {
+  font-size: 16px;
   }
 }

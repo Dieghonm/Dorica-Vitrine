@@ -39,7 +39,7 @@ function Card({ data, index }) {
         target="_blank"
         rel="noreferrer"
       >
-        <WhatsAppIcon size={15} />
+        <WhatsAppIcon size={20} />
         Solicitar catálogo completo
       </a>
     </article>

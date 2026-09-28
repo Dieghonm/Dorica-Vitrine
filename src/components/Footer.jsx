@@ -14,7 +14,7 @@ function Footer() {
         target="_blank"
         rel="noreferrer"
       >
-        <WhatsAppIcon size={15} />
+        <WhatsAppIcon size={30} />
         Falar no WhatsApp
       </a>
 
